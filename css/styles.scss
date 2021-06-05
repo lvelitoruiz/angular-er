@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+@import "./helpers.scss";
+@import "./general.scss";
+@import "./component/header.scss";
+@import "./component/detail.scss";
+@import "./component/button.scss";
+@import "./component/gallery.scss";
+@import "./component/box.scss";
+@import "./component/list.scss";
+@import "./component/tab.scss";
+
+body {
+  font-family: 'Cabin', sans-serif;
+}

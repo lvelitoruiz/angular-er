@@ -1,0 +1,43 @@
+.list {
+  padding-top: 72px;  
+
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: $c-black;
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  &--content {
+    border-bottom: 1px solid $c-gray;
+
+    .item {
+      display: flex;
+      font-size: 14px;
+      flex-direction: column;
+      border-top: 1px solid $c-gray;
+      padding: 16px 0;
+
+      @media (min-width: 440px) {
+        align-items: center;
+        border-top: 1px solid $c-gray;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        min-height: 53px;
+        flex-direction: row;
+        padding: 0;
+      }
+      
+      span {
+        font-weight: bold;
+      }
+
+      p {
+        margin: 0;
+        color: $c-black;
+      }
+    }
+  }
+}

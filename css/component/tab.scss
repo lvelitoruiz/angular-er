@@ -1,0 +1,33 @@
+.tab {
+  padding-top: 48px;
+
+  &--header {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .item {
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 24px;
+      cursor: pointer;
+      color: $c-gray-4;
+      font-weight: bold;
+
+      @media (min-width: 440px) {
+        font-size: 20px;
+      }
+
+      &.active {
+        color: $c-black;
+        border-bottom: 2px solid $c-black;
+      }
+    }
+  }
+
+  &--body {
+    color: $c-gray-4;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

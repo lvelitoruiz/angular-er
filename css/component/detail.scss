@@ -1,0 +1,129 @@
+.detail {
+  background-color: $c-gray-3;
+  border-top: 1px solid $c-gray-2;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+
+  @media (min-width: 440px) {
+    padding: 40px 0;
+  }
+
+  &--container {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+    justify-content: flex-end;
+
+    @media (min-width: 440px) {
+      max-width: 78%;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+  
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  &--info {
+    align-items: flex-start;
+    display: none;
+    flex-direction: column;
+
+    @media (min-width: 440px) {
+      display: flex;
+    }
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+
+    .item {
+      width: 280px;
+      font-size: 14px;
+
+      strong {
+        color: $c-black;
+      }
+
+      p {
+        color: $c-gray-4;
+        margin: 0;
+        line-height: 20px;
+        padding-top: 10px;
+        display: none;
+
+        @media (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &--price {
+    align-items: flex-end;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+
+    @media (min-width: 440px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .info {
+      padding-bottom: 24px;
+
+      @media (min-width: 440px) {
+        padding-right: 32px;
+        padding-bottom: 0;
+      }
+    }
+
+    strong {
+      font-size: 27px;
+      line-height: 32px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      color: $c-gray-4;
+    }
+  }
+
+  &--icons {
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 80px;
+    text-align: center;
+
+    @media (min-width: 440px) {
+      grid-template-columns: auto auto auto;
+    }
+
+    .item {
+      padding-bottom: 30px;
+
+      @media (min-width: 440px) {
+        padding-bottom: 0;
+      }
+      
+      img {
+        height: 26px;
+      }
+      
+      p {
+        font-size: 14px;
+        color: $c-black;
+      }
+    }
+  }
+}
